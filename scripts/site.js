@@ -18,6 +18,7 @@ $(document).ready(() => {
   $('.nav-item').click(function() {
     loadContent($(this).attr('data-name'));
   });
+  
 });
 
 const lazyFadeAnimation = [
@@ -35,8 +36,8 @@ loadContent = (page) => {
   $('#page_content').hide().load(page).fadeIn('1000');
 
   // Set the title of the page based on the content shown
-  document.title = page == 'about.html' ? 'About Edwin Richards' :
-    page == 'projects.html' ? 'Personal Projects' :
+  document.title = page == 'about.html' ? 'About Eddie' :
+    page == 'portfolio.html' ? 'Portfolio' :
     page == 'resume.html' ? 'Resumé' :
     page == 'contact.html' ? 'Contact Edwin Richards' : 'Edwin Richards | Full-Stack Software Developer';
 }
