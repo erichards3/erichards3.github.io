@@ -1,6 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
+<<<<<<< HEAD
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="lib/fontawesome/dist/css/all.css" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/site.css" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="lib/typeit/dist/typeit.min.js"></script>
+  <script type="text/javascript" src="scripts/site.js"></script>
+
+  <title>Edwin Richards | Full-Stack Software Developer</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <div class="debug">
+    <label><input type="checkbox"> Debug</label>
+  </div>
+
+  <div class="parallax">
+    <a id="top"></a>
+=======
   <head>
+    <meta charset="UTF-8"> 
+    
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="lib/fontawesome/dist/css/all.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -9,53 +43,212 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="scripts/site.js"></script>
+    <script type="text/javascript" src="scripts/site.js"></script>
 
     <title>Edwin Richards | Full-Stack Software Developer</title>
   </head>
   <body class="d-flex flex-column h-100">
+>>>>>>> 9c2b46cea7aacbddc5eab12534700ce0db252b5e
     <!-- nav bar -->
     <div class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
       <div class="container d-flex">
-        <a class="navbar-brand text-light" href="index.html">Edwin Richards</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page_navbar" aria-controls="page_navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand text-light" href="#top">Edwin Richards</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page_navbar"
+          aria-controls="page_navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="page_navbar">
           <ul class="navbar-nav">
-            <li class="nav-item" data-name="about.html">
-              <a class="nav-link" href="#">About</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_anchor">About</a>
             </li>
-            <li class="nav-item" data-name="projects.html">
+<<<<<<< HEAD
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio_anchor">Portfolio</a>
+=======
+            <li class="nav-item" data-name="portfolio.html">
               <a class="nav-link" href="#">Projects</a>
+>>>>>>> 9c2b46cea7aacbddc5eab12534700ce0db252b5e
             </li>
-            <li class="nav-item" data-name="contact.html">
-              <a class="nav-link" href="#">Contact Me</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact_anchor">Contact Me</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
+
+    <div id="home" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div>
+          <h2 id="welcome_header" class="mt-5 text-center">
+            Welcome to my website!
+          </h2>
+          <p class="text-center">
+            My name is Eddie and I'm a software developer always looking for new challenges!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="bin_heart" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class=""></div>
+      </div>
+      <div class="parallax__layer parallax__layer--back bg-center">
+        <div class=""></div>
+      </div>
+    </div>
+
+    <a id="about_anchor"></a>
+
+    <div id="about" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="container mt-5">
+          <div class="text-center">
+            <img class="rounded-lg mb-3" src="images/face.png" alt="My Face" width="256" height="256" />
+            <h2 id="about_header" class="text-muted">
+              About me
+            </h2>
+          </div>
+          <div style="height: fit-content;">
+            <p class="lead lazy-fade-in">
+              My name is Edwin, but you can call me Eddie. I currently work as a full-stack software developer for an
+              automation software company based in Southern Arizona where I have lived the majority of my life. I
+              discovered my love for software development while taking courses at a local community college and
+              stumbling upon the Computer Programming program they offered. I distinctly remember starting my first course in the
+              program, "Intro to Logic", and I almost couldn't put down the textbook! Everything just made so much
+              sense! At that point, I knew I wanted do software development professionally and I have been living my dream since
+              2017!
+            </p>
+            <p class="lead lazy-fade-in">
+              My areas of expertise lie primarly in Windows-based software development but I am always eager to learn
+              new languages and technologies. I use C#.Net (and .Net Core) and MS SQL Server at work and I especially enjoy
+              working in the back end, though I can get by doing front end development as well (I did make this website,
+              afterall). I have a working knowledge of several programming languages including C#, C/C++, Java, and
+              Python and I am very well versed in Object Oriented Programming concepts and principles.
+            </p>
+            <p class="lead lazy-fade-in">
+              As far as education goes, I am always learning new things. But I currently possess an Associate's degree
+              in computer programming from the community college I mentioned earlier as well as a Bachelor's degree in 
+              Computer Science. I am considering pursuing a Master's degree in CS as well, but I have not commited to 
+              anything just yet.
+            </p>
+            <p class="lead lazy-fade-in">
+              In addition to my passion for writing software, I also have a passion for teaching software development to
+              people of all ages! I have spent the past year or so tutoring other CS and IT students who are brand new
+              to coding. I love having the opportunity to share my knowledge and experience with them and get them to that 
+              "Ah-ha!" moment!
+            </p>
+            <p class="lead lazy-fade-in">
+              When I am not working, studying, or teaching, I like to spend time playing with my kids, watching movies
+              and TV shows, <strike>playing</strike> watching football, and working on personal coding projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about_spacer" class="parallax__group">
+    </div>
+
+    <div id="arizona" class="parallax__group">
+      <div class="parallax__layer parallax__layer--back bg-center">
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+      </div>
+    </div>
+
+    <a id="portfolio_anchor"></a>
+
+    <div id="portfolio" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Portfolio stuff</div>
+      </div>
+    </div>
+
+    <a id="contact_anchor"></a>
     
-    <!-- dynamic page content -->
-    <main role="main" class="flex-shrink-0">
-      <div class="container py-3" id="page_content"></div>
-    </main>
+    <div id="group7" class="parallax__group">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title">Contact or something</div>
+      </div>
+    </div>
+
+    <!-- 
+
+      <div id="portfolio">
+        <h2 id="portfolio_header" class="mt-5 text-center">
+          Still working on this
+        </h2>
+        <div class="text-center">
+          <p class="h4">Check back soon!</p>
+          <p class="h5">
+            Or head over to my github if you'd like
+            <a class="text-light mx-1 h5" href="https://github.com/erichards3" target="_blank"><i
+                class="fab fa-github"></i></a>
+          </p>
+        </div>
+      </div>
+
+      <div id="contact">
+        <h2 id="contact_header" class="mt-5 text-center">
+          More to come later
+        </h2>
+        <p class="h4 text-center">
+          Enjoy these links in the meantime
+        </p>
+        <div class="text-center">
+          <a class="text-light mx-1 h3" href="https://www.linkedin.com/in/edwinrichards3/" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a class="text-light mx-1 h3" href="https://www.youtube.com/channel/UCXROWt1_Guu6ZruxXURva6w"
+            target="_blank"><i class="fab fa-youtube"></i></a>
+          <a class="text-light mx-1 h3" href="https://github.com/erichards3" target="_blank"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </main> -->
 
     <!-- footer -->
     <footer class="border-top bg-primary mt-auto">
       <div class="container py-4">
         <div class="d-flex flex-column-reverse flex-md-row justify-content-center">
           <div class="m-auto">
-            &copy; <script>document.write(new Date().getFullYear());</script> - Edwin Richards
+<<<<<<< HEAD
+            &copy;
+            <script>document.write(new Date().getFullYear());</script> Edwin Richards
+          </div>
+          <div class="m-auto">
+            <a class="text-muted mx-1" href="https://github.com/erichards3/erichards3.github.io" target="_blank">Show me
+              the code</a>
+          </div>
+          <div class="m-auto">
+            <a class="text-light mx-1 h4" href="https://www.linkedin.com/in/edwinrichards3/" target="_blank"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a class="text-light mx-1 h4" href="https://www.youtube.com/channel/UCXROWt1_Guu6ZruxXURva6w"
+              target="_blank"><i class="fab fa-youtube"></i></a>
+            <a class="text-light mx-1 h4" href="https://github.com/erichards3" target="_blank"><i
+                class="fab fa-github"></i></a>
+=======
+            &copy; <script>document.write(new Date().getFullYear());</script> Edwin Richards |
+            <a id="privacy_policy" class="text-light mx-1" href="#">Privacy</a>
+          </div>
+          <div class="m-auto">
+            <a class="text-muted mx-1" href="https://github.com/erichards3/erichards3.github.io" target="_blank">Show me the code</a>
           </div>
           <div class="m-auto">
             <a class="text-light mx-1 h4" href="https://www.linkedin.com/in/edwinrichards3/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a class="text-light mx-1 h4" href="https://www.youtube.com/channel/UCXROWt1_Guu6ZruxXURva6w"><i class="fab fa-youtube" target="_blank"></i></a>
+            <a class="text-light mx-1 h4" href="https://www.youtube.com/channel/UCXROWt1_Guu6ZruxXURva6w" target="_blank"><i class="fab fa-youtube"></i></a>
             <a class="text-light mx-1 h4" href="https://github.com/erichards3" target="_blank"><i class="fab fa-github"></i></a>
+>>>>>>> 9c2b46cea7aacbddc5eab12534700ce0db252b5e
           </div>
         </div>
       </div>
     </footer>
-  </body>
+  </div>
+</body>
+<!-- Photo by Alexander Sinn on Unsplash (binary heart)
+Photo by Christoph von Gellhorn on Unsplash (AZ desert trail) -->
+
 </html>

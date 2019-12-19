@@ -1,59 +1,42 @@
-$(document).ready(() => {  
-  // So we can know when elements are added (or removed) from the page
-  const target = document.querySelector('#page_content');
-  
-  let observer = new MutationObserver(() => observeIntersections());
-  
-  const config = {
-    childList: true,
-    subtree: true
-  };
-  
-  observer.observe(target, config);
+$(document).ready(() => {
+  $('input').click(() => updateDebugState());
 
-  // Load the home page info by default
-  loadContent('home.html');
+  updateDebugState();
 
-  // When a nav item is clicked, load the corresponding content
-  $('.nav-item').click(function() {
-    loadContent($(this).attr('data-name'));
-  });
+  observeIntersections();
+  typeCode();
 });
 
-const lazyFadeAnimation = [
-  { opacity: 0 },
-  { opacity: 1 }
-];
-
-const lazyFadeTiming = {
-  duration: 500,
-  iterations: 1
-}
-
-// Retrieves and loads the content for the page
-loadContent = (page) => {
-  $('#page_content').hide().load(page).fadeIn('1000');
-
-  // Set the title of the page based on the content shown
-  document.title = page == 'about.html' ? 'About Edwin Richards' :
-    page == 'projects.html' ? 'Personal Projects' :
-    page == 'resume.html' ? 'Resumé' :
-    page == 'contact.html' ? 'Contact Edwin Richards' : 'Edwin Richards | Full-Stack Software Developer';
+updateDebugState = () => {
+  document.body.classList.toggle('debug-on', $('input').is(':checked'));
 }
 
 // Sets up the intersection observer to handle animating when elements are in view
 observeIntersections = () => {
-  let target = document.querySelector('.lazy-fade-in');
+  let targets = document.querySelectorAll('.lazy-fade-in');
 
-  if (target != null) {
-    let observer = new IntersectionObserver(intersectCallback);
+  if (targets != null) {
+    targets.forEach(t => {
+      let observer = new IntersectionObserver(intersectCallback);
 
-    observer.observe(target);
+      observer.observe(t);
+    });
   }
 }
 
 // Callback function called when an intersection is observed
 intersectCallback = (entries, obs) => {
+  const lazyFadeAnimation = [
+    { opacity: 0, transform: 'translateY(50px)' },
+    { opacity: 1, transform: 'translateY(0px)' }
+  ];
+
+  const lazyFadeTiming = {
+    duration: 500,
+    easing: 'ease-out',
+    iterations: 1
+  }
+
   entries.forEach(entry => {
     if (entry.intersectionRatio > 0) {
       entry.target.animate(lazyFadeAnimation, lazyFadeTiming);
@@ -61,3 +44,36 @@ intersectCallback = (entries, obs) => {
     }
   });
 }
+
+typeCode = () => {
+  new TypeIt('#welcome_header', {
+    speed: 50,
+    startDelay: 200,
+    cursor: false,
+    lifeLike: false
+  }).go();
+
+  new TypeIt('#about_header', {
+    speed: 50,
+    startDelay: 200,
+    cursor: false,
+    lifeLike: false,
+    waitUntilVisible: true
+  }).go();
+
+  new TypeIt('#portfolio_header', {
+    speed: 50,
+    startDelay: 200,
+    cursor: false,
+    lifeLike: false,
+    waitUntilVisible: true
+  }).go();
+
+  new TypeIt('#contact_header', {
+    speed: 50,
+    startDelay: 200,
+    cursor: false,
+    lifeLike: false,
+    waitUntilVisible: true
+  }).go();
+};
