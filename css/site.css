@@ -108,7 +108,8 @@ body {
 }
 
 #home .parallax__layer--base {
-  background: #222;
+  background-image: url('../images/in_the_zone.gif');
+  background-size: cover;
 }
 
 #bin_heart {
