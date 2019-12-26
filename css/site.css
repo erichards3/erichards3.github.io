@@ -4,9 +4,8 @@
 
 .parallax_bg {
   height: 85vh;
-
   background-attachment: fixed;
-  background-position: right calc(100% - 50%) center;
+  background-position: right 50% center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -16,9 +15,16 @@
   background-color: #222;
 }
 
-#gif_animation {
-  background-image: url('../images/in_the_zone.gif');
-  background-size: cover;
+.bg-center {
+  background-position: right 50% center;
+}
+
+#welcome_header {
+  font-size: 4.5rem;
+}
+
+#welcome_subheader {
+  font-size: 1.58rem;
 }
 
 #bin_heart {
@@ -33,6 +39,76 @@
   background-image: url("../images/eat_sleep_code_repeat.jpg");
 }
 
-.bg-center {
-  background-position: right calc(100% - 50%) center;
+#welcome-text-overlay {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  padding: 8px;
+}
+
+/* Portrait mode */
+@media (orientation: portrait) { 
+  #gif_animation {
+    background-image: url('../images/writing_code.gif');
+    background-size: cover;
+  }
+
+  #eat_sleep {
+    background-image: url("../images/eat_sleep_code_repeat_portrait.jpg");
+  }
+
+  #welcome-text-overlay {
+    background-color: rgba(124, 124, 124, 0.4);
+  }
+}
+
+/* Landscape mode */
+@media (orientation: landscape) { 
+  #gif_animation {
+    background-image: url('../images/in_the_zone.gif');
+    background-size: cover;
+  }
+
+  #eat_sleep {
+    background-image: url("../images/eat_sleep_code_repeat.jpg");
+  }
+
+  #welcome-text-overlay {
+    background-color: rgba(34, 34, 34, 0.4);
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Small devices */
+@media (min-width: 576px) { 
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 768px) { 
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Large devices */
+@media (min-width: 992px) { 
+  html {
+    font-size: 20px;
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) { 
+  html {
+    font-size: 22px;
+  }
 }
