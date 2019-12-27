@@ -81,34 +81,34 @@
 /* Extra small devices */
 @media (max-width: 575.98px) {
   html {
-    font-size: 14px;
+    font-size: 24px;
   }
 }
 
 /* Small devices */
 @media (min-width: 576px) { 
   html {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 
 /* Medium devices */
 @media (min-width: 768px) { 
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 /* Large devices */
 @media (min-width: 992px) { 
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 /* Extra large devices */
-@media (min-width: 1200px) { 
+/* @media (min-width: 1200px) { 
   html {
-    font-size: 22px;
+    font-size: 20px;
   }
-}
+} */
