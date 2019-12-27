@@ -9,7 +9,11 @@ const contactPlaceholders = [
   {'name': 'Bran Stark', 'email': 'bran@warglife.com', 'message': 'I am the three-eyed Raven.'},
   {'name': 'Sansa Stark', 'email': 'sansa@downwithdany.org', 'message': 'Definitely NOT getting married again.'},
   {'name': 'Cersei Lannister', 'email': 'cersei@ruthlessrulers.com', 'message': 'I am the queen and no one will take that from me.'},
-  {'name': 'Jaime Lannister', 'email': 'jamie@kingsguard.com', 'message': 'I would do anything for my sister.'}
+  {'name': 'Jaime Lannister', 'email': 'jamie@kingsguard.com', 'message': 'I would do anything for my sister.'},
+  {'name': 'Tormund Giantsbane', 'email': 'tormund@giantsmilk.sales', 'message': 'Is the big woman still here?'},
+  {'name': 'Ygritte', 'email': 'jamie@kingsguard.com', 'message': 'You know nothing, Jon Snow.'},
+  {'name': 'Melisandre', 'email': 'melisandre@lordoflight.com', 'message': 'The night is dark and full of terrors.'},
+  {'name': 'Hodor', 'email': 'hodor@hodor.com', 'message': 'Hodor hodor hodor, hodor.'},
 ]
 
 $(document).ready(() => {
