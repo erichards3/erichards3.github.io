@@ -1,8 +1,18 @@
+const contactPlaceholders = [
+  {'name': 'Jon Snow', 'email': 'jon.snow@nightswatch.com', 'message': 'The dead are coming!'},
+  {'name': 'Samwell Tarley', 'email': 'sam.tarly@nightswatch.com', 'message': 'I know who the true heir to the throne is.'},
+  {'name': 'Daenerys Targaryen', 'email': 'motherofdragons@danyforqueen.org', 'message': 'Bend the knee... or DIE!'},
+  {'name': 'Tyrion Lannister', 'email': 'tyrion@danyforqueen.org', 'message': 'I drink and I know things.'},
+  {'name': 'Petyr Baelish', 'email': 'little.finger@kingscouncil.com', 'message': 'Chaos is a ladder.'},
+  {'name': 'Arya Stark', 'email': 'arya@thefaceless.org', 'message': 'A girl has no name.'},
+  {'name': 'Brienne of Tarth', 'email': 'brienne@newknights.com', 'message': 'I am sworn to protect the Stark girls.'},
+  {'name': 'Bran Stark', 'email': 'bran@warglife.com', 'message': 'I am the three-eyed Raven.'},
+  {'name': 'Sansa Stark', 'email': 'sansa@downwithdany.org', 'message': 'Definitely NOT getting married again.'},
+  {'name': 'Cersei Lannister', 'email': 'cersei@ruthlessrulers.com', 'message': 'I am the queen and no one will take that from me.'},
+  {'name': 'Jaime Lannister', 'email': 'jamie@kingsguard.com', 'message': 'I would do anything for my sister.'}
+]
+
 $(document).ready(() => {
-  $('input').click(() => updateDebugState());
-
-  updateDebugState();
-
   observeIntersections();
   typeCode();
 
@@ -14,15 +24,17 @@ $(document).ready(() => {
       if (form.checkValidity() === false) {
         event.preventDefault();
         event.stopPropagation();
-      }
+      }  
       form.classList.add('was-validated');
-    }, false);
-  });
-});
+    }, false);  
+  });  
 
-updateDebugState = () => {
-  document.body.classList.toggle('debug-on', $('input').is(':checked'));
-}
+  formPlaceholder = contactPlaceholders[randomInteger(0, contactPlaceholders.length)];
+
+  $('#contact_name').attr('placeholder', formPlaceholder['name']);
+  $('#contact_email').attr('placeholder', formPlaceholder['email']);
+  $('#contact_message').attr('placeholder', formPlaceholder['message']);
+});  
 
 // Sets up the intersection observer to handle animating when elements are in view
 observeIntersections = () => {
@@ -90,3 +102,7 @@ typeCode = () => {
     waitUntilVisible: true
   }).go();
 };
+
+randomInteger = (min, max) => {
+  return Math.floor(Math.random() * (max - min) ) + min;
+}
