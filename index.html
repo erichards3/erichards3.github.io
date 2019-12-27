@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Edwin Richards">
+  <meta name="description" content="">
 
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="lib/fontawesome/dist/css/all.css" />
@@ -54,7 +56,8 @@
     <div id="welcome-text-overlay" class="card">
       <div class="card-body">
         <p id="welcome_header" class="card-title text-right text-monospace">Welcome!</p>
-        <p class="lead card-text text-right text-monospace">I'm a software developer always looking for new challenges</p>
+        <p class="lead card-text text-right text-monospace">I'm a software developer always looking for new challenges
+        </p>
       </div>
     </div>
   </div>
@@ -131,22 +134,42 @@
   <a id="contact_anchor"></a>
 
   <div id="contact" class="parallax_fg">
-    <h2 id="contact_header" class="mt-5 text-center">
-      More to come later
-    </h2>
-    <p class="h4 text-center">
-      Enjoy these links in the meantime
-    </p>
-    <div class="text-center">
-      <a class="text-light mx-1 h3" href="https://www.linkedin.com/in/edwinrichards3/" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a class="text-light mx-1 h3" href="https://www.youtube.com/channel/UCXROWt1_Guu6ZruxXURva6w" target="_blank">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a class="text-light mx-1 h3" href="https://github.com/erichards3" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
+    <div class="container py-5">
+      <h2 id="contact_header" class="text-center">
+        Send me a message!
+      </h2>
+      <form class="needs-validation"
+        action="https://getsimpleform.com/messages?form_api_token=b585cd719d581f7e3056260497209e39" 
+        method="POST"
+        novalidate>
+        <div class="form-group">
+          <label for="email">Your email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="your.email@example.com"
+            required>
+          <div class="valid-feedback">Thank you!</div>
+          <div class="invalid-feedback">Please enter a valid email address (so I know how to contact you back if needed)
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Tell me your name" required>
+          <div class="valid-feedback">Thank you!</div>
+          <div class="invalid-feedback">Please enter your name (so I know who's talking to me)</div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your message</label>
+          <textarea class="form-control" id="message" name="message" placeholder="Type your message here"
+            required></textarea>
+          <div class="valid-feedback">Thank you!</div>
+          <div class="invalid-feedback">Please enter a message (so I know what you're saying to me)</div>
+        </div>
+
+        <input name="redirect_to" type="hidden" value="https://erichards3.github.io">
+
+        <button class="btn btn-lg btn-block btn-primary" type="submit">Submit</button>
+      </form>
     </div>
   </div>
 
@@ -178,7 +201,5 @@
     </div>
   </footer>
 </body>
-<!-- Photo by Alexander Sinn on Unsplash (binary heart)
-Photo by Christoph von Gellhorn on Unsplash (AZ desert trail) -->
 
 </html>
