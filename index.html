@@ -56,7 +56,7 @@
     <div id="welcome-text-overlay" class="card">
       <div class="card-body">
         <p id="welcome_header" class="card-title text-right text-monospace">Welcome!</p>
-        <p class="lead card-text text-right text-monospace">I'm a software developer always looking for new challenges
+        <p class="lead card-text text-right text-monospace">I'm a software developer who is always looking for a new challenge
         </p>
       </div>
     </div>
@@ -138,29 +138,29 @@
       <h2 id="contact_header" class="text-center">
         Send me a message!
       </h2>
-      <form class="needs-validation"
+      <form id="contact_form" class="needs-validation"
         action="https://getsimpleform.com/messages?form_api_token=b585cd719d581f7e3056260497209e39" 
         method="POST"
         novalidate>
         <div class="form-group">
-          <label for="email">Your email address</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="your.email@example.com"
-            required>
-          <div class="valid-feedback">Thank you!</div>
-          <div class="invalid-feedback">Please enter a valid email address (so I know how to contact you back if needed)
-          </div>
-        </div>
-
-        <div class="form-group">
           <label for="name">Your name</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Tell me your name" required>
+          <input type="text" class="form-control" id="contact_name" name="name" placeholder="" required>
           <div class="valid-feedback">Thank you!</div>
           <div class="invalid-feedback">Please enter your name (so I know who's talking to me)</div>
         </div>
 
         <div class="form-group">
+          <label for="email">Your email address</label>
+          <input type="email" class="form-control" id="contact_email" name="email" placeholder=""
+            required>
+          <div class="valid-feedback">Thank you!</div>  
+          <div class="invalid-feedback">Please enter a valid email address (so I know how to contact you back if needed)
+          </div>  
+        </div>  
+
+        <div class="form-group">
           <label for="message">Your message</label>
-          <textarea class="form-control" id="message" name="message" placeholder="Type your message here"
+          <textarea class="form-control" id="contact_message" name="message" placeholder=""
             required></textarea>
           <div class="valid-feedback">Thank you!</div>
           <div class="invalid-feedback">Please enter a message (so I know what you're saying to me)</div>
