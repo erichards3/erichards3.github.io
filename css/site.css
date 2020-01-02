@@ -46,6 +46,13 @@
   padding: 8px;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices--because Apple.. */ 
+  .parallax_bg {
+    background-attachment: scroll;
+  }
+}
+
 /* Portrait mode */
 @media (orientation: portrait) { 
   #gif_animation {
