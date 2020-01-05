@@ -53,9 +53,12 @@
 }
 
 .flip-card-back {
-  /* background-color: #2980b9;
-  color: white; */
   transform: rotateY(180deg);
+}
+
+i.fa-long-arrow-alt-left {
+  font-size: 1.6rem;
+  vertical-align: middle;
 }
 
 #welcome_header {
@@ -88,7 +91,8 @@
   max-height:100%;
 }
 
-#welcome-text-overlay {
+#welcome_text_overlay {
+  background-color: rgba(85, 85, 85, 0.4);
   position: absolute;
   bottom: 0%;
   right: 0%;
@@ -112,10 +116,6 @@
   #eat_sleep {
     background-image: url("../images/eat_sleep_code_repeat_portrait.jpg");
   }
-
-  #welcome-text-overlay {
-    background-color: rgba(124, 124, 124, 0.4);
-  }
 }
 
 /* Landscape mode */
@@ -127,10 +127,6 @@
 
   #eat_sleep {
     background-image: url("../images/eat_sleep_code_repeat.jpg");
-  }
-
-  #welcome-text-overlay {
-    background-color: rgba(34, 34, 34, 0.4);
   }
 }
 
