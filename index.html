@@ -3,10 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Edwin Richards">
-  <meta name="description" content="">
+  <meta name="description"
+    content="Edwin Richards, the software developer! (More commonly known as Eddie) Come see what sets me apart from everyone else!">
 
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="lib/fontawesome/dist/css/all.css" />
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="css/site.css" />
@@ -56,7 +57,8 @@
     <div id="welcome-text-overlay" class="card">
       <div class="card-body">
         <p id="welcome_header" class="card-title text-right text-monospace">Welcome!</p>
-        <p class="lead card-text text-right text-monospace">I'm a software developer who is always looking for a new challenge
+        <p class="lead card-text text-right text-monospace">I'm a software developer who is always looking for a new
+          challenge
         </p>
       </div>
     </div>
@@ -115,17 +117,47 @@
   <a id="portfolio_anchor"></a>
 
   <div id="portfolio" class="parallax_fg">
-    <h2 id="portfolio_header" class="mt-5 text-center">
-      Still working on this
+    <h2 id="portfolio_header" class="mt-5 mb-3 text-center">
+      Some of my projects
     </h2>
-    <div class="text-center">
-      <p class="h4">Check back soon!</p>
-      <p class="h5">
-        Or head over to my github if you'd like
-        <a class="text-light mx-1 h5" href="https://github.com/erichards3" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </p>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-auto mb-2">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img id="go_fish_game_play" src="images/go_fish_play.gif" alt="go fish game play" />
+              </div>
+              <div class="flip-card-back text-light bg-dark">
+                <h1>Go Fish</h1>
+                <p>A little console game</p>
+                <p>Check out the source</p>
+                <a class="text-light mx-1 h4" href="https://github.com/erichards3/GoFish" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-auto mb-2">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img id="hang_man_game_play" src="images/hangman_play.gif" alt="hang man game play" />
+              </div>
+              <div class="flip-card-back text-light bg-dark">
+                <h1>Hangman</h1>
+                <p>A WPF application</p>
+                <p>Check out the source</p>
+                <a class="text-light mx-1 h4" href="https://github.com/erichards3/WpfHangmanFun" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -139,8 +171,7 @@
         Send me a message!
       </h2>
       <form id="contact_form" class="needs-validation"
-        action="https://getsimpleform.com/messages?form_api_token=b585cd719d581f7e3056260497209e39" 
-        method="POST"
+        action="https://getsimpleform.com/messages?form_api_token=b585cd719d581f7e3056260497209e39" method="POST"
         novalidate>
         <div class="form-group">
           <label class="h4" for="name">Your name</label>
@@ -151,17 +182,15 @@
 
         <div class="form-group">
           <label class="h4" for="email">Your email address</label>
-          <input type="email" class="form-control" id="contact_email" name="email" placeholder=""
-            required>
-          <div class="valid-feedback">Thank you!</div>  
+          <input type="email" class="form-control" id="contact_email" name="email" placeholder="" required>
+          <div class="valid-feedback">Thank you!</div>
           <div class="invalid-feedback">Please enter a valid email address (so I know how to contact you back if needed)
-          </div>  
-        </div>  
+          </div>
+        </div>
 
         <div class="form-group">
           <label class="h4" for="message">Your message</label>
-          <textarea class="form-control" id="contact_message" name="message" placeholder=""
-            required></textarea>
+          <textarea class="form-control" id="contact_message" name="message" placeholder="" required></textarea>
           <div class="valid-feedback">Thank you!</div>
           <div class="invalid-feedback">Please enter a message (so I know what you're saying to me)</div>
         </div>
