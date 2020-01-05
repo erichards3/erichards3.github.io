@@ -99,6 +99,16 @@ i.fa-long-arrow-alt-left {
   padding: 8px;
 }
 
+#face_image {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#face_image:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
 @supports (-webkit-overflow-scrolling: touch) {
   /* CSS specific to iOS devices--because Apple.. */ 
   .parallax_bg {
