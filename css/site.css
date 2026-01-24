@@ -113,6 +113,10 @@ i.fa-long-arrow-alt-left {
   filter: grayscale(0%);
 }
 
+.company-field {
+  display: none;
+}
+
 @supports (-webkit-overflow-scrolling: touch) {
   /* CSS specific to iOS devices--because Apple.. */ 
   .parallax-bg {
