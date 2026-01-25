@@ -2,8 +2,23 @@
   scroll-behavior: smooth;
 }
 
+body {
+  padding-top: var(--bs-navbar-height, 96px);
+}
+
 html {
   font-size: 16px;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: #b61924; */
+  /* background-image: url(""); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .parallax-bg {
@@ -19,9 +34,27 @@ html {
   background-color: #222;
 }
 
-.bg-center {
-  background-position: right 50% center;
+.content-section {
+  height: calc(100vh - 96px);
 }
+
+.hero-image {
+  background-image: url("/images/pcb.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.clipped-parallelogram {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.anchor-offset {
+  scroll-margin-top: 120px; /* match navbar height */
+}
+
+/* .bg-center {
+  background-position: right 50% center;
+} */
 
 .flip-card {
   background-color: transparent;
@@ -64,13 +97,13 @@ i.fa-long-arrow-alt-left {
   font-size: 1.6rem;
   vertical-align: middle;
 }
+/* 
+#hero_bg {
+  background: linear-gradient(43deg,rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 60%, rgba(2, 0, 36, 1) 100%)
+} */
 
-#welcome_header {
+#header_line_1 {
   font-size: 4.5rem;
-}
-
-#welcome_subheader {
-  font-size: 1.58rem;
 }
 
 #bin_heart {
@@ -95,13 +128,13 @@ i.fa-long-arrow-alt-left {
   max-height:100%;
 }
 
-#welcome_text_overlay {
+/* #welcome_text_overlay {
   background-color: rgba(85, 85, 85, 0.4);
   position: absolute;
   bottom: 0%;
   right: 0%;
   padding: 8px;
-}
+} */
 
 #face_image {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -126,10 +159,10 @@ i.fa-long-arrow-alt-left {
 
 /* Portrait mode */
 @media (orientation: portrait) { 
-  #gif_animation {
+  /* #gif_animation {
     background-image: url('../images/writing_code.gif');
     background-size: cover;
-  }
+  } */
 
   #eat_sleep {
     background-image: url("../images/eat_sleep_code_repeat_portrait.jpg");
@@ -138,10 +171,10 @@ i.fa-long-arrow-alt-left {
 
 /* Landscape mode */
 @media (orientation: landscape) { 
-  #gif_animation {
+  /* #gif_animation {
     background-image: url('../images/in_the_zone.gif');
     background-size: cover;
-  }
+  } */
 
   #eat_sleep {
     background-image: url("../images/eat_sleep_code_repeat.jpg");
