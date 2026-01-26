@@ -11,10 +11,20 @@ $(document).ready(() => {
       if (form.checkValidity() === false) {
         event.preventDefault();
         event.stopPropagation();
-      }  
+      }
       form.classList.add('was-validated');
     }, false);  
-  });  
+  });
+
+  // Make sure the nave bar collapses when option clicked
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navbar = document.querySelector('.navbar-collapse');
+      if (navbar.classList.contains('show')) {
+        bootstrap.Collapse.getOrCreateInstance(navbar).hide();
+      }
+    });
+  });
 });  
 
 initParticlesJS = () => {
@@ -57,13 +67,6 @@ intersectCallback = (entries, obs) => {
 }
 
 typeCode = () => {
-  // new TypeIt('#welcome_header', {
-  //   speed: 50,
-  //   startDelay: 200,
-  //   cursor: false,
-  //   lifeLike: false
-  // }).go();
-
   new TypeIt('#about_header', {
     speed: 50,
     startDelay: 200,
@@ -72,7 +75,7 @@ typeCode = () => {
     waitUntilVisible: true
   }).go();
 
-  new TypeIt('#portfolio_header', {
+  new TypeIt('#faq_header', {
     speed: 50,
     startDelay: 200,
     cursor: false,

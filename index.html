@@ -13,34 +13,31 @@
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/site.css" />
 
+  <title>Desert Logic | Custom Web & Software Development</title>
+</head>
+
+<body>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="lib/typeit/dist/typeit.min.js"></script>
   <script type="text/javascript" src="js/site.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
-  <title>Desert Logic | Custom Web & Software Development</title>
-</head>
-
-<body>
   <a id="top"></a>
 
   <!-- nav bar -->
-  <div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
-    <div class="container-fluid container-lg">
-      <a class="navbar-brand text-light" href="#top">Desert Logic</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#page_navbar"
-        aria-controls="page_navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#top">Desert Logic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="page_navbar">
-        <ul class="navbar-nav ml-auto">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#about_anchor">About</a>
           </li>
@@ -48,41 +45,44 @@
             <a class="nav-link" href="#faq_anchor">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact_anchor">Contact us</a>
+            <a class="nav-link" href="#contact_anchor">Contact</a>
           </li>
         </ul>
       </div>
     </div>
-  </div>
+  </nav>
+  </nav>
 
-  <div id="hero" class="content-section position-relative">
+  <div id="hero" class="parallax-fg position-relative navbar-offset">
     <div id="particles-js"></div>
-    <div class="container-fluid container-lg h-100">
+    <div class="container vh-100">
       <div class="row h-100">
-        <div class="col-12 col-lg-7 d-flex flex-column">
-          <div id="header_line_1" class="fade-in-from-left">Desert Logic</div>
+        <div class="col-12 col-lg-7 d-flex flex-column align-self-center">
+          <div id="header_line_1" class="fade-in-from-left strong">Desert Logic</div>
           <div id="header_line_2" class="h3 fade-in-from-right">
             Custom software for businesses and individuals
           </div>
-          <div class="my-auto">
-            <a class="btn btn-lg btn-primary px-5 fade-in" href="#contact_anchor">Contact Us!</a>
+          <div class="mt-2">
+            <a class="btn btn-lg btn-outline-success px-5 fade-in-from-bottom" href="#contact_anchor">Contact Us!</a>
           </div>
         </div>
-        <div class="col-lg-5 d-none d-lg-block hero-image clipped-parallelogram fade-in-from-right my-5">
+        <div class="d-none col-lg-5 d-lg-flex flex-lg-column align-self-center">
+          <!-- <img class="clipped-parallelogram fade-in-from-top" src="images/pcb.jpg"
+            alt="A low exposure photograph of an unsoldered PCB with Gold finish by Vishnu Mohanan" /> -->
         </div>
       </div>
     </div>
   </div>
 
-  <a id="about_anchor" class="mt-5"></a>
+  <div id="desert" class="parallax-bg"></div>
 
-  <div id="about" class="content-section">
-    <div class="container-fluid container-lg my-5">
-      <div class="text-center">
-        <h2 id="about_header" class="text-muted">
-          Who we are
-        </h2>
-      </div>
+  <a id="about_anchor" class="scroll-offset"></a>
+
+  <div id="about" class="parallax-fg">
+    <div class="container h-100 py-5">
+      <h2 id="about_header" class="text-center text-muted">
+        Who we are
+      </h2>
       <div>
         <p class="lead lazy-fade-in">
           We are software developers with years of professional experience building reliable, maintainable software for
@@ -103,190 +103,190 @@
     </div>
   </div>
 
-  <a id="faq_anchor"></a>
+  <div id="bin_heart" class="parallax-bg"></div>
 
-  <div id="faq" class="content-section">
-    <div class="container my-5">
-      <h2 id="faq_header" class="text-center">
+  <a id="faq_anchor" class="scroll-offset"></a>
+
+  <div id="faq" class="parallax-fg">
+    <div class="container h-100 py-5">
+      <h2 id="faq_header" class="text-center text-muted">
         Frequently Asked Questions
       </h2>
       <div class="accordion mt-4" id="faq_accordion">
-        <div class="card lazy-fade-in">
-          <div class="card-header" id="faq_1">
-            <h2 class="mb-0">
-              <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#faq_answer_1"
-                aria-expanded="true" aria-controls="faq_answer_1">
-                What types of projects do you typically work on?
-              </button>
-            </h2>
+        <div class="accordion-item border border-success lazy-fade-in">
+          <div class="accordion-header" id="faq_1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq_answer_1" aria-expanded="false" aria-controls="faq_answer_1">
+              What types of projects do you typically work on?
+            </button>
           </div>
-          <div id="faq_answer_1" class="collapse" aria-labelledby="faq_1" data-parent="#faq_accordion">
-            <div class="card-body">
+          <div id="faq_answer_1" class="accordion-collapse collapse" aria-labelledby="faq_1"
+            data-bs-parent="#faq_accordion">
+            <div class="accordion-body">
               We typically work on custom web applications, APIs, internal tools, desktop applications, and background
               services. Many projects involve automating manual processes, integrating systems, or building software
               tailored to specific business needs.
             </div>
           </div>
         </div>
-        <div class="card lazy-fade-in">
-          <div class="card-header" id="faq_2">
-            <h2 class="mb-0">
-              <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#faq_answer_2"
-                aria-expanded="true" aria-controls="faq_answer_2">
-                How does pricing and estimating work?
-              </button>
-            </h2>
+        <div class="accordion-item border border-success lazy-fade-in">
+          <div class="accordion-header" id="faq_2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq_answer_2" aria-expanded="false" aria-controls="faq_answer_2">
+              How does pricing and estimating work?
+            </button>
           </div>
-          <div id="faq_answer_2" class="collapse" aria-labelledby="faq_2" data-parent="#faq_accordion">
-            <div class="card-body">
+          <div id="faq_answer_2" class="accordion-collapse collapse" aria-labelledby="faq_2"
+            data-bs-parent="#faq_accordion">
+            <div class="accordion-body">
               Pricing depends on the scope and complexity of the project. After an initial conversation, We'll provide
               either a fixed-price estimate for well-defined work or an hourly rate for more open-ended projects. We
               focus on clear scope and expectations up front so there are no surprises later.
             </div>
           </div>
         </div>
-        <div class="card lazy-fade-in">
-          <div class="card-header" id="faq_3">
-            <h2 class="mb-0">
-              <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#faq_answer_3"
-                aria-expanded="true" aria-controls="faq_answer_3">
-                Do you offer ongoing support or maintenance?
-              </button>
-            </h2>
+        <div class="accordion-item border border-success lazy-fade-in">
+          <div class="accordion-header" id="faq_3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq_answer_3" aria-expanded="false" aria-controls="faq_answer_3">
+              Do you offer ongoing support or maintenance?
+            </button>
           </div>
-          <div id="faq_answer_3" class="collapse" aria-labelledby="faq_3" data-parent="#faq_accordion">
-            <div class="card-body">
+          <div id="faq_answer_3" class="accordion-collapse collapse" aria-labelledby="faq_3"
+            data-bs-parent="#faq_accordion">
+            <div class="accordion-body">
               Yes. We offer ongoing support and maintenance after a project is completed, whether that's small
               adjustments, bug fixes, or continued development. Support can be billed hourly or through a simple
               monthly agreement, depending on your needs.
             </div>
           </div>
         </div>
-        <div class="card lazy-fade-in">
-          <div class="card-header" id="faq_4">
-            <h2 class="mb-0">
-              <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#faq_answer_4"
-                aria-expanded="true" aria-controls="faq_answer_4">
-                Do you work with small businesses or startups?
-              </button>
-            </h2>
+        <div class="accordion-item border border-success lazy-fade-in">
+          <div class="accordion-header" id="faq_4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq_answer_4" aria-expanded="false" aria-controls="faq_answer_4">
+              Do you work with small businesses or startups?
+            </button>
           </div>
-          <div id="faq_answer_4" class="collapse" aria-labelledby="faq_4" data-parent="#faq_accordion">
-            <div class="card-body">
+          <div id="faq_answer_4" class="accordion-collapse collapse" aria-labelledby="faq_4"
+            data-bs-parent="#faq_accordion">
+            <div class="accordion-body">
               Yes. We often work with small businesses and startups that need custom software but aren't ready to hire a
               full-time developer. We're comfortable working on projects of various sizes and adjusting scope to fit
               real-world budgets.
             </div>
           </div>
         </div>
-        <div class="card lazy-fade-in">
-          <div class="card-header" id="faq_5">
-            <h2 class="mb-0">
-              <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#faq_answer_5"
-                aria-expanded="true" aria-controls="faq_answer_5">
-                Do you build everything from scratch?
-              </button>
-            </h2>
+        <div class="accordion-item border border-success lazy-fade-in">
+          <div class="accordion-header" id="faq_5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq_answer_5" aria-expanded="false" aria-controls="faq_answer_5">
+              Do you build everything from scratch?
+            </button>
           </div>
-          <div id="faq_answer_5" class="collapse" aria-labelledby="faq_5" data-parent="#faq_accordion">
-            <div class="card-body">
+          <div id="faq_answer_5" class="accordion-collapse collapse" aria-labelledby="faq_5"
+            data-bs-parent="#faq_accordion">
+            <div class="accordion-body">
               Not always. When existing tools or libraries make sense, We use those to save time and cost. The goal is a
               reliable, maintainable solution -- not reinventing the wheel unless there's a good reason.
             </div>
           </div>
         </div>
-        <div class="card lazy-fade-in">
-          <div class="card-header" id="faq_6">
-            <h2 class="mb-0">
-              <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#faq_answer_6"
-                aria-expanded="true" aria-controls="faq_answer_6">
-                Can you work with existing systems or code?
-              </button>
-            </h2>
+        <div class="accordion-item border border-success lazy-fade-in">
+          <div class="accordion-header" id="faq_6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq_answer_6" aria-expanded="false" aria-controls="faq_answer_6">
+              Can you work with existing systems or code?
+            </button>
           </div>
-          <div id="faq_answer_6" class="collapse" aria-labelledby="faq_6" data-parent="#faq_accordion">
-            <div class="card-body">
-              Yes. We are capable of improving, extending, or maintaining existing applications, even if we didn't originally build them. Part of the initial process is reviewing what's already in place and identifying the best path forward.
+          <div id="faq_answer_6" class="accordion-collapse collapse" aria-labelledby="faq_6"
+            data-bs-parent="#faq_accordion">
+            <div class="accordion-body">
+              Yes. We are capable of improving, extending, or maintaining existing applications, even if we didn't
+              originally build them. Part of the initial process is reviewing what's already in place and identifying
+              the best path forward.
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <a id="contact_anchor"></a>
+  <div id="eat_sleep" class="parallax-bg"></div>
 
-    <div id="contact" class="content-section">
-      <div class="container py-5">
-        <h2 id="contact_header" class="text-center">
-          Send us a message!
-        </h2>
-        <form id="contact_form" class="needs-validation" action="https://formspree.io/f/xpqpylvv" method="POST"
-          novalidate>
-          <div class="form-group">
-            <label class="h4 lazy-fade-in" for="name">Your name</label>
-            <input type="text" class="form-control lazy-fade-in" id="contact_name" name="name" placeholder="John Doe"
-              required>
-            <div class="valid-feedback">Thank you!</div>
-            <div class="invalid-feedback">Please enter your name (so I know who you are)</div>
-          </div>
+  <a id="contact_anchor" class="scroll-offset"></a>
 
-          <div class="form-group">
-            <label class="h4 lazy-fade-in" for="email">Your email address</label>
-            <input type="email" class="form-control lazy-fade-in" id="contact_email" name="email"
-              placeholder="johnny@email.com" required>
-            <div class="valid-feedback">Thank you!</div>
-            <div class="invalid-feedback">Please enter a valid email address (so I know how to reach you)
-            </div>
-          </div>
+  <div id="contact" class="parallax-fg">
+    <div class="container h-100 py-5">
+      <h2 id="contact_header" class="text-center text-muted">
+        Send us a message!
+      </h2>
+      <form id="contact_form" class="needs-validation" action="https://formspree.io/f/xpqpylvv" method="POST"
+        novalidate>
+        <div class="mb-3">
+          <label class="h5 lazy-fade-in" for="name">Your name</label>
+          <input type="text" class="form-control lazy-fade-in" id="contact_name" name="name" placeholder="John Doe"
+            required>
+          <div class="valid-feedback">Thank you!</div>
+          <div class="invalid-feedback">Please enter your name (so we know who you are)</div>
+        </div>
 
-          <div class="company-field">
-            <label class="h4" for="email">Your company</label>
-            <input type="text" class="form-control" id="company" name="_gotcha" placeholder="">
-          </div>
-
-          <div class="form-group">
-            <label class="h4 lazy-fade-in" for="message">Your message</label>
-            <textarea class="form-control lazy-fade-in" id="contact_message" name="message"
-              placeholder="Your message here..." required></textarea>
-            <div class="valid-feedback">Thank you!</div>
-            <div class="invalid-feedback">Please enter a message (so I know what you want to tell me)</div>
-          </div>
-
-          <input name="redirect_to" type="hidden" value="https://erichards3.github.io/thankyou.html">
-
-          <button class="btn btn-lg btn-block btn-primary lazy-fade-in" type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <footer class="border-top bg-dark mt-auto">
-      <div class="container py-4">
-        <div class="d-flex flex-column-reverse flex-md-row justify-content-center">
-          <div class="m-auto text-muted">
-            &copy;
-            <script>document.write(new Date().getFullYear());</script>
-          </div>
-          <div class="m-auto">
-            <a class="text-muted mx-1" href="https://github.com/erichards3/erichards3.github.io" target="_blank">
-              Show me the code
-            </a>
-          </div>
-          <div class="m-auto">
-            <a class="text-muted mx-1 h4" href="https://www.linkedin.com/in/edwinrichards3/" target="_blank">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a class="text-muted mx-1 h4" href="https://www.youtube.com/channel/UCXROWt1_Guu6ZruxXURva6w"
-              target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a class="text-muted mx-1 h4" href="https://github.com/erichards3" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
+        <div class="mb-3">
+          <label class="h5 lazy-fade-in" for="email">Your email address</label>
+          <input type="email" class="form-control lazy-fade-in" id="contact_email" name="email"
+            placeholder="johnny@email.com" required>
+          <div class="valid-feedback">Thank you!</div>
+          <div class="invalid-feedback">Please enter a valid email address (so we know how to reply)
           </div>
         </div>
+
+        <div class="company-field">
+          <label class="h5" for="email">Your company</label>
+          <input type="text" class="form-control" id="company" name="_gotcha" placeholder="">
+        </div>
+
+        <div class="mb-3">
+          <label class="h5 lazy-fade-in" for="message">Your message</label>
+          <textarea class="form-control lazy-fade-in" id="contact_message" name="message"
+            placeholder="Your message here..." required></textarea>
+          <div class="valid-feedback">Thank you!</div>
+          <div class="invalid-feedback">Please enter a message (so we know what you want to say)</div>
+        </div>
+
+        <input name="redirect_to" type="hidden" value="https://erichards3.github.io/thankyou.html">
+
+        <button class="btn btn-lg btn-block btn-outline-success lazy-fade-in" type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="border-top bg-dark mt-auto">
+    <div class="container py-4">
+      <div class="d-flex flex-column-reverse flex-md-row justify-content-center">
+        <div class="m-auto text-muted">
+          &copy;
+          <script>document.write(new Date().getFullYear());</script>
+        </div>
+        <div class="m-auto">
+          <a class="text-muted mx-1" href="https://github.com/erichards3/erichards3.github.io" target="_blank">
+            Show me the code
+          </a>
+        </div>
+        <div class="m-auto">
+          <a class="text-muted mx-1 h4" href="https://www.linkedin.com/in/edwinrichards3/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="text-muted mx-1 h4" href="https://www.youtube.com/channel/UCXROWt1_Guu6ZruxXURva6w" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a class="text-muted mx-1 h4" href="https://github.com/erichards3" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 
 </html>
