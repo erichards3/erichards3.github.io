@@ -3215,6 +3215,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #375a7f;
   --bs-gradient: none;
+  backdrop-filter: blur(5px);
 }
 
 .btn-outline-secondary {
@@ -3232,6 +3233,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #444;
   --bs-gradient: none;
+  backdrop-filter: blur(5px);
 }
 
 .btn-outline-success {
@@ -3249,6 +3251,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #00bc8c;
   --bs-gradient: none;
+  backdrop-filter: blur(5px);
 }
 
 .btn-outline-info {
@@ -3266,6 +3269,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #3498db;
   --bs-gradient: none;
+  backdrop-filter: blur(5px);
 }
 
 .btn-outline-warning {
@@ -3283,6 +3287,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #f39c12;
   --bs-gradient: none;
+  backdrop-filter: blur(5px);
 }
 
 .btn-outline-danger {
@@ -3300,6 +3305,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #e74c3c;
   --bs-gradient: none;
+  backdrop-filter: blur(5px);
 }
 
 .btn-outline-light {
@@ -3317,6 +3323,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #adb5bd;
   --bs-gradient: none;
+  backdrop-filter: blur(5px);
 }
 
 .btn-outline-dark {
@@ -3334,6 +3341,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #303030;
   --bs-gradient: none;
+  backdrop-filter: blur(5px);
 }
 
 .btn-link {
