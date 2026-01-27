@@ -1,34 +1,44 @@
 .fade-in {
   opacity: 0;
-  animation: fadeIn 1s ease-in forwards
+  animation: fadeIn 1.5s ease-in forwards
 }
 
 .fade-in-from-bottom {
   opacity: 0;
   transform: translateY(60px);
-  animation: fadeIn 1s ease-in forwards,
-             resetY 1s ease-out forwards;
+  animation: fadeIn 1.5s ease-in forwards,
+             resetY 1.5s ease-out forwards;
 }
 
 .fade-in-from-top {
   opacity: 0;
   transform: translateY(-60px);
-  animation: fadeIn 1s ease-in forwards,
-             resetY 1s ease-out forwards;
+  animation: fadeIn 1.5s ease-in forwards,
+             resetY 1.5s ease-out forwards;
 }
 
 .fade-in-from-left {
   opacity: 0;
   transform: translateX(-80px);
-  animation: fadeIn 1s ease-in forwards,
-             resetX 1s ease-out forwards;
+  animation: fadeIn 1.5s ease-in forwards,
+             resetX 1.5s ease-out forwards;
 }
 
 .fade-in-from-right {
   opacity: 0;
   transform: translateX(80px);
+  animation: fadeIn 1.5s ease-in forwards,
+             resetX 1.5s ease-out forwards;
+}
+
+.lazy-fade-in {
+  transform: translateY(60px);
+  opacity: 0;
+}
+
+.lazy-fade-in.show {
   animation: fadeIn 1s ease-in forwards,
-             resetX 1s ease-out forwards;
+             resetY 1s ease-out forwards;
 }
 
 @keyframes fadeIn {

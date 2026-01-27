@@ -29,7 +29,7 @@
   <a id="top"></a>
 
   <!-- nav bar -->
-  <div class="floating-nav-wrapper">
+  <div class="floating-nav-wrapper fade-in-from-top">
     <nav class="navbar navbar-dark navbar-expand-sm floating-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#top"><i class="fas fa-code"></i></a>
@@ -64,20 +64,19 @@
           <div id="header_line_2" class="h3 fade-in-from-right">
             Custom software for businesses and individuals
           </div>
-          <div class="mt-2">
+          <div class="mt-5">
             <a class="btn btn-lg btn-outline-success rounded-pill px-5 fade-in-from-bottom"
               href="#contact_anchor">Contact Us!</a>
           </div>
         </div>
-        <!-- <div class="d-none col-lg-5 d-lg-flex flex-lg-column align-self-center">
-          <img class="clipped-parallelogram fade-in-from-top" src="images/pcb.jpg"
-            alt="A low exposure photograph of an unsoldered PCB with Gold finish by Vishnu Mohanan" /> 
-        </div>-->
       </div>
+    </div>
+    <div class="d-none d-lg-flex">
+      <img src="images/desert_night.jpg" alt="Saguaro National Park by Nina Luong" class="hero-img fade-in-from-right">
     </div>
   </div>
 
-  <div id="desert" class="parallax-bg"></div>
+  <div id="eat_sleep" class="parallax-bg"></div>
 
   <a id="about_anchor" class="scroll-offset"></a>
 
@@ -86,9 +85,10 @@
       <h2 id="about_header" class="text-center text-muted">
         Who we are
       </h2>
-      <div>
+      <div class="col-12 col-lg-8 col-xl-6 offset-lg-2 offset-xl-3 text-center">
         <p class="lead lazy-fade-in">
-          We are software developers with years of professional experience building reliable, maintainable software for
+          We are a US based software company with years of professional experience building reliable, maintainable
+          software for
           real-world business needs. We can handle all your software needs from custom web sites to APIs to desktop
           applications and background services.
         </p>
@@ -226,7 +226,7 @@
     </div>
   </div>
 
-  <div id="eat_sleep" class="parallax-bg"></div>
+  <div id="desert" class="parallax-bg"></div>
 
   <a id="contact_anchor" class="scroll-offset"></a>
 
@@ -271,7 +271,7 @@
 
             <input name="redirect_to" type="hidden" value="https://erichards3.github.io/thankyou.html">
 
-            <button class="btn btn-lg btn-block btn-outline-success rounded-pill px-5 lazy-fade-in" type="submit">Send
+            <button class="btn btn-lg btn-block btn-outline-success rounded-pill px-5 mt-3 lazy-fade-in" type="submit">Send
               Message</button>
           </form>
         </div>
@@ -283,24 +283,19 @@
   <footer class="border-top bg-dark mt-auto">
     <div class="container py-4">
       <div class="d-flex flex-column-reverse flex-md-row justify-content-center">
-        <div class="m-auto text-muted">
+        <div class="mx-auto text-muted mb-2 mb-md-0">
           &copy;
-          <script>document.write(new Date().getFullYear());</script>
+          <script>document.write(new Date().getFullYear());</script> Desert Logic
         </div>
-        <div class="m-auto">
-          <a class="text-muted mx-1" href="https://github.com/erichards3/erichards3.github.io" target="_blank">
-            Show me the code
-          </a>
+        <div class="mx-auto text-muted text-center mb-2 mb-md-0">
+          Custom software solutions - US Based
         </div>
-        <div class="m-auto">
+        <div class="mx-auto mb-2 mb-md-0">
           <a class="text-muted mx-1 h4" href="https://www.linkedin.com/in/edwinrichards3/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a class="text-muted mx-1 h4" href="https://www.youtube.com/channel/UCXROWt1_Guu6ZruxXURva6w" target="_blank">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a class="text-muted mx-1 h4" href="https://github.com/erichards3" target="_blank">
-            <i class="fab fa-github"></i>
+          <a class="text-muted mx-1 h4" href="#contact">
+            <i class="far fa-envelope"></i>
           </a>
         </div>
       </div>
