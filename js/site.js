@@ -2,6 +2,7 @@ $(document).ready(() => {
   initParticlesJS();
   observeIntersections();
   initTypeEffects();
+  initScrollListener();
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
   var forms = $('.needs-validation');
@@ -13,7 +14,7 @@ $(document).ready(() => {
         event.stopPropagation();
       }
       form.classList.add('was-validated');
-    }, false);  
+    }, false);
   });
 
   // Make sure the nave bar collapses when option clicked
@@ -25,7 +26,7 @@ $(document).ready(() => {
       }
     });
   });
-});  
+});
 
 initParticlesJS = () => {
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
@@ -85,3 +86,33 @@ initTypeEffects = () => {
     waitUntilVisible: true
   }).go();
 };
+
+initScrollListener = () => {
+  let lastScrollY = window.scrollY; // Get the initial vertical scroll position
+
+  window.addEventListener("scroll", function () {
+    // Get the current vertical scroll position
+    const currentScrollY = window.scrollY;
+    const navWrapper = document.querySelector('.floating-nav-wrapper');
+
+    if (lastScrollY < currentScrollY) {
+      if (!navWrapper.classList.contains('hide')) {
+        navWrapper.classList.add('hide');
+      }
+      if (navWrapper.classList.contains('show')) {
+        navWrapper.classList.remove('show');
+      }
+    } else if (lastScrollY > currentScrollY) {
+      if (navWrapper.classList.contains('hide')) {
+        navWrapper.classList.remove('hide');
+      }
+      if (!navWrapper.classList.contains('show')) {
+        navWrapper.classList.add('show');
+      }
+    }
+    // If lastScrollY === currentScrollY, the position hasn't changed (no scroll event triggered in the first place or very minimal movement)
+
+    // Update the last scroll position for the next event
+    lastScrollY = currentScrollY;
+  });
+}
